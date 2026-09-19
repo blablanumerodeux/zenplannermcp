@@ -11,6 +11,10 @@ class ZenplannerConfig:
     email: str = os.getenv("ZENPLANNER_EMAIL", "")
     password: str = os.getenv("ZENPLANNER_PASSWORD", "")
     person_id: str = os.getenv("ZENPLANNER_PERSON_ID", "")
+    # Member-API settings (studio/api2): org (partition) id + display timezone.
+    # Default org = CrossFit Pro1.
+    org_id: str = os.getenv("ZENPLANNER_ORG_ID", "12cdc08f-eeed-4601-85a8-cf36e8486008")
+    timezone: str = os.getenv("ZENPLANNER_TZ", "America/Toronto")
 
     # Session state (filled after login)
     cf_id: str = field(default="", repr=False)

@@ -3,3 +3,6 @@
 __pycache__/
 *.pyc
 *.pyo
+
+# Local reverse-engineering probes (may contain captured credentials/secrets)
+api_probe/
